@@ -5,7 +5,7 @@ This repository hosts the code and data for the AIPAC Transparency Platform. It 
 Setup
 ```
 git clone https://github.com/US-MARAD/AIPAC.git
-cd SFK3
+cd AIPAC
 ```
 Install the Python dependencies so you can run the app and tests.
 ```
