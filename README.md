@@ -16,6 +16,18 @@ This repository hosts the code and data for the AIPAC Transparency Platform. It 
 /tests/                - Unit and integration tests
 ```
 
+## Setup
+
+1. Copy `.env.example` to `.env` and add your API keys.
+2. Install dependencies and run tests:
+
+```bash
+python -m pip install -r requirements.txt
+pytest -v
+```
+
 Use `docker compose up --build -d` to start all services.
+
+The `automation/fetch_aipac_donations.py` script downloads AIPAC PAC disbursements from the FEC API and saves them under `data/raw/`.
 
 See `AGENTS.md` for full project guidelines.
