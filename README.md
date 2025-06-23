@@ -2,6 +2,33 @@
 
 This repository hosts the code and data for the AIPAC Transparency Platform. It follows the directory layout and Docker-based workflows described in `AGENTS.md`.
 
+Setup
+```
+git clone https://github.com/US-MARAD/AIPAC.git
+cd SFK3
+```
+Install the Python dependencies so you can run the app and tests.
+```
+pip install -r requirements.txt
+pip install -r requirements-dev.txt
+```
+
+```
+Copy .env.example to .env and update values.
+cp .env.example .env
+```
+
+```
+docker-compose down
+git pull
+docker-compose up -d --build
+```
+
+```
+docker ps
+docker logs sfk3-app-1 --tail=100
+```
+
 ## Repository Structure
 
 ```
