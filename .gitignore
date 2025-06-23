@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Env files
+.env
+.env.local
+
+# Data
+/data/raw/
+/data/processed/
+
+# Logs
+logs/
+
+# Node
+node_modules/
+
+# Others
+*.sqlite
+.DS_Store
