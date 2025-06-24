@@ -1,7 +1,5 @@
-import builtins
 from automation.fetch_aipac_donations import FECClient, save_to_csv
 from unittest import mock
-import io
 
 
 def test_fetch_disbursements_pagination(monkeypatch):

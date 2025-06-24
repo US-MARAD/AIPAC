@@ -70,7 +70,10 @@ def main() -> None:
     output_dir = os.path.join("data", "raw")
     os.makedirs(output_dir, exist_ok=True)
     timestamp = datetime.utcnow().strftime("%Y%m%d%H%M%S")
-    output_path = os.path.join(output_dir, f"aipac_donations_{cycle}_{timestamp}.csv")
+    output_path = os.path.join(
+        output_dir,
+        f"aipac_donations_{cycle}_{timestamp}.csv",
+    )
     save_to_csv(records, output_path)
     print(f"Saved data to {output_path}")
 
